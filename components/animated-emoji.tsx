@@ -69,7 +69,7 @@ const AnimatedEmoji = () => {
             setLoading(false);
           }}
         >
-          Generate
+          生成
         </Button>
       </div>
     </div>
