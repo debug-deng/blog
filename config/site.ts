@@ -11,5 +11,5 @@ export const siteConfig = {
 };
 
 export const notionBlogConfig = {
-  blogParentId: "657c8581-4fda-455d-b940-a8fdbf47fd3f",
+  blogParentId: "13eca92a-1fdc-807c-9c63-fd813f22449b",
 };
