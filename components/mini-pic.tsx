@@ -11,13 +11,13 @@ const MiniPic = () => {
         <Image
           alt="cover"
           className="rounded-b-none object-cover"
-          src="mini-dark.jpg"
+          src="yq.png"
         />
       ) : (
         <Image
           alt="cover"
           className="rounded-b-none object-cover"
-          src="mini-light.jpg"
+          src="yq.png"
         />
       )}
     </div>
