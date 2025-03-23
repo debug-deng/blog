@@ -34,7 +34,7 @@ export default async function App() {
       paperUrl={remainingUrls[paths.paper]}
       photos={photos}
       resumeUrl={remainingUrls[paths.resume]}
-      webagentUrl={webagentUrlPromise}
+      webagentUrl={remainingUrls[paths.webagent]}
     />
   );
 }
