@@ -176,7 +176,16 @@ const Home = ({
             selectedCard[tabSelected]["webAgent"] ? "opacity-100" : "opacity-50"
           )}
         >
-          <WebAgent webAgentUrl={webagentUrl} />
+          <WebAgent webAgentUrl="/yq.png" title="月琴"/>
+        </div>
+        <div
+          key="webAgent2"
+          className={cn(
+            "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden z-[1]",
+            selectedCard[tabSelected]["webAgent"] ? "opacity-100" : "opacity-50"
+          )}
+        >
+          <WebAgent webAgentUrl="/ls.png" title="芦笙"/>
         </div>
         <div
           key="chatBot"
