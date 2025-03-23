@@ -136,7 +136,7 @@ const Home = ({
         >
           <CardStack photos={photos} />
         </div>
-        <div
+{/*         <div
           key="animatedEmoji"
           className={cn(
             "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1]",
@@ -146,7 +146,7 @@ const Home = ({
           )}
         >
           <AnimatedEmoji />
-        </div>
+        </div> */}
         <div
           key="mapComponent"
           className={cn(
@@ -158,7 +158,7 @@ const Home = ({
         >
           <MapComponent />
         </div>
-        <div
+{/*         <div
           key="iconCloud"
           className={cn(
             "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center relative overflow-hidden p-10 md:p-8 z-[1]",
@@ -168,7 +168,7 @@ const Home = ({
           )}
         >
           <IconCloud iconSlugs={icons} />
-        </div>
+        </div> */}
         <div
           key="webAgent"
           className={cn(
@@ -221,7 +221,7 @@ const Home = ({
         >
           <Actions photoUrl={actionImageUrl} />
         </div>
-        <div
+{/*         <div
           key="paper"
           className={cn(
             "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1] overflow-hidden",
@@ -229,7 +229,7 @@ const Home = ({
           )}
         >
           <Paper paperUrl={paperUrl} />
-        </div>
+        </div> */}
       </Responsive>
     </div>
   );
