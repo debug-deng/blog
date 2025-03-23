@@ -31,7 +31,7 @@ const AnimatedEmoji = () => {
             inputWrapper: "border-midnight dark:border-knight",
             label: "text-gray-400",
           }}
-          label="Enter text, get emoji!"
+          label="输入文本，获得表情符号！！！"
           radius="lg"
           variant="underlined"
           onMouseDown={(e) => {
