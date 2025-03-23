@@ -24,6 +24,8 @@ export default async function App() {
     batchGetPhotoUrls(remainingPaths),
   ]);
 
+  const webagentUrlPromise = "/月琴特写白底.png";
+
   return (
     <Home
       actionImageUrl={criticalUrls[paths.action]}
@@ -33,7 +35,7 @@ export default async function App() {
       paperUrl={remainingUrls[paths.paper]}
       photos={photos}
       resumeUrl={remainingUrls[paths.resume]}
-      webagentUrl={remainingUrls[paths.webagent]}
+      webagentUrl={webagentUrlPromise}
     />
   );
 }
