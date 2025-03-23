@@ -110,10 +110,7 @@ const Home = ({
         >
           <AvatarTransition avatarUrl={avatarUrl} dogUrl={dogUrl} />
           <p className="text-sm md:text-medium">
-            Hey! I’m <span className="font-oleo text-2xl"> Eric</span>, a
-            software engineer, hailing from UCLA and Purdue. Currently, I’m
-            building a cool marketing product. My world revolves around web
-            development. And yes, I have an adorable dog named Bert!
+            嗨! 我是<span className="font-oleo text-2xl"> 靓仔</span>, 一个热爱生活的95后全栈开发佬，我喜欢唱、跳、打篮球。当你看到这条信息的时候，就默认我是靓仔了，不接受反驳！
           </p>
           <DockDemo resumeUrl={resumeUrl} />
         </div>
