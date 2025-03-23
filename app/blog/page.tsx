@@ -24,7 +24,7 @@ const Page = async () => {
             <RxCross2 />
           </Button>
         </Link>
-        <h1 className="text-2xl font-[500]">My Blog</h1>
+        <h1 className="text-2xl font-[500]">我的博文</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {blogPosts.map(({ id, title, block, pageCover, createdAt }) => (
