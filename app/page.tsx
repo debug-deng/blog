@@ -24,7 +24,6 @@ export default async function App() {
     batchGetPhotoUrls(remainingPaths),
   ]);
 
-  const webagentUrlPromise = "/月琴特写白底.png";
 
   return (
     <Home
