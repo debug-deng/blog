@@ -84,7 +84,7 @@ const AvatarTransition: React.FC<AvatarTransitionProps> = ({
         variant="bordered"
         onPress={() => setToggle((prev) => !prev)}
       >
-        Toggle
+        切换
       </Button>
     </div>
   );
