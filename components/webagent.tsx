@@ -9,7 +9,7 @@ interface WebAgentProps {
 
 const WebAgent = ({ webAgentUrl,title }: WebAgentProps) => {
   return (
-    <div className="relative bg-cardGreen w-full h-full group dark:bg-darkBg flex flex-col justify-center items-center">
+    <div className="relative w-full h-full group dark:bg-darkBg flex flex-col justify-center items-center">
       {/* <div className="absolute -bottom-96 left-16 bg-cardPink w-[145%] h-full rounded-full dark:hidden" /> */}
 
       <div className="absolute top-1/2 -translate-y-1/2  transform rounded-2xl ">
