@@ -5,6 +5,7 @@ import Image from "next/image";
 interface WebAgentProps {
   webAgentUrl: string;
   title: string;
+  url: string;
 }
 
 const WebAgent = ({ webAgentUrl,title,url }: WebAgentProps) => {
