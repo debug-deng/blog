@@ -176,7 +176,7 @@ const Home = ({
             selectedCard[tabSelected]["webAgent"] ? "opacity-100" : "opacity-50"
           )}
         >
-          <WebAgent webAgentUrl="/yq.png" title="月琴"/>
+          <WebAgent webAgentUrl="/yq.png" title="月琴" url="https://playcanv.as/b/6e3141a6"/>
         </div>
         <div
           key="webAgent2"
@@ -185,7 +185,7 @@ const Home = ({
             selectedCard[tabSelected]["webAgent"] ? "opacity-100" : "opacity-50"
           )}
         >
-          <WebAgent webAgentUrl="/ls.png" title="芦笙"/>
+          <WebAgent webAgentUrl="/ls.png" title="芦笙" url="https://playcanv.as/p/wwwViNJA/"/>
         </div>
         <div
           key="chatBot"
