@@ -11,7 +11,6 @@ import MiniPic from "./mini-pic";
 
 import { cn } from "@/lib/utils";
 import AvatarTransition from "@/components/avatar";
-import { DockDemo } from "@/components/dock-demo";
 import { ThemeSwitch } from "@/components/theme-switch";
 import CardStack from "@/components/card-stack";
 import AnimatedEmoji from "@/components/animated-emoji";
