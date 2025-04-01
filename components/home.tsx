@@ -108,7 +108,12 @@ const Home = ({
         >
           <AvatarTransition avatarUrl={avatarUrl} dogUrl={dogUrl} />
           <p className="text-sm md:text-medium">
-            嗨! 我是<span className="font-oleo text-2xl"> 靓仔</span>, 一个热爱生活的95后全栈开发佬，我喜欢唱、跳、打篮球。当你看到这条信息的时候，就默认我是靓仔了，不接受反驳！
+            <span className="font-oleo text-2xl"> >Children's Songs in the Mountains </spanis an electronic museum dedicated to intangible cultural 
+              heritage instruments. It also encapsulates the rich stories of the Children's Songs in the 
+              Mountains project, which, over the years, has crossed mountains and rivers through music 
+              education, fostering cultural exchange with ethnic minority communities. Presented in digital 
+              form, the initiative aims to broaden public understanding of ethnic minority musical traditions, 
+              while also serving as a platform to support rural public welfare in these communities.   
           </p>
           <DockDemo resumeUrl={resumeUrl} />
         </div>
