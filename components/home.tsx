@@ -115,7 +115,6 @@ const Home = ({
               form, the initiative aims to broaden public understanding of ethnic minority musical traditions, 
               while also serving as a platform to support rural public welfare in these communities.   
           </p>
-          <DockDemo resumeUrl={resumeUrl} />
         </div>
         <div
           key="themeSwitch"
