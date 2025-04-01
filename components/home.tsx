@@ -108,7 +108,7 @@ const Home = ({
         >
           <AvatarTransition avatarUrl={avatarUrl} dogUrl={dogUrl} />
           <p className="text-sm md:text-medium">
-            <span className="font-oleo text-2xl"> >Children's Songs in the Mountains </spanis an electronic museum dedicated to intangible cultural 
+            <span className="font-oleo text-2xl"> Children's Songs in the Mountains </span> is an electronic museum dedicated to intangible cultural 
               heritage instruments. It also encapsulates the rich stories of the Children's Songs in the 
               Mountains project, which, over the years, has crossed mountains and rivers through music 
               education, fostering cultural exchange with ethnic minority communities. Presented in digital 
