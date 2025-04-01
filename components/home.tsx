@@ -86,8 +86,6 @@ const Home = ({
         }}
       >
         <Tab key="all" title="所有" />
-        <Tab key="about" title="关于" />
-        <Tab key="projects" title="项目" />
         <Tab key="blog" title="博客" />
       </Tabs>
 
