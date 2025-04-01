@@ -26,6 +26,7 @@ import useWindowWidth from "@/hooks/useWindowWidth";
 
 interface HomeProps {
   photos: string[];
+  avatarUrl: string;
   dogUrl: string;
   actionImageUrl: string;
   resumeUrl: string;
@@ -36,6 +37,7 @@ interface HomeProps {
 
 const Home = ({
   photos,
+  avatarUrl,
   dogUrl,
   actionImageUrl,
   resumeUrl,
@@ -103,10 +105,11 @@ const Home = ({
             selectedCard[tabSelected]["avatar"] ? "opacity-100" : "opacity-50"
           )}
         >
-          <AvatarTransition avatarUrl="/tx.jpg" dogUrl={dogUrl} />
+          <AvatarTransition avatarUrl={avatarUrl} dogUrl={dogUrl} />
           <p className="text-sm md:text-medium">
-            test
+            嗨! 我是<span className="font-oleo text-2xl"> 靓仔</span>, 一个热爱生活的95后全栈开发佬，我喜欢唱、跳、打篮球。当你看到这条信息的时候，就默认我是靓仔了，不接受反驳！
           </p>
+          <DockDemo resumeUrl={resumeUrl} />
         </div>
         <div
           key="themeSwitch"
