@@ -105,7 +105,7 @@ const Home = ({
             selectedCard[tabSelected]["avatar"] ? "opacity-100" : "opacity-50"
           )}
         >
-          <AvatarTransition avatarUrl={avatarUrl} dogUrl={dogUrl} />
+          <AvatarTransition avatarUrl="/tx.jpg" dogUrl={dogUrl} />
           <p className="text-sm md:text-medium">
             嗨! 我是<span className="font-oleo text-2xl"> 靓仔</span>, 一个热爱生活的95后全栈开发佬，我喜欢唱、跳、打篮球。当你看到这条信息的时候，就默认我是靓仔了，不接受反驳！
           </p>
