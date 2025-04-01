@@ -78,14 +78,7 @@ const AvatarTransition: React.FC<AvatarTransitionProps> = ({
           />
         </motion.div>
       </div>
-      <Button
-        className="rounded-full border-midnight dark:border-knight"
-        startContent={<MdOutlineSync size={16} />}
-        variant="bordered"
-        onPress={() => setToggle((prev) => !prev)}
-      >
-        切换
-      </Button>
+  
     </div>
   );
 };
