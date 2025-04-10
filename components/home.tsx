@@ -125,6 +125,8 @@ const Home = ({
         >
           
         </div>
+
+
         <div
           key="cardStack"
           className={cn(
@@ -134,7 +136,7 @@ const Home = ({
               : "opacity-50"
           )}
         >
-          <CardStack photos={photos} />
+          <CardStack photos={photos} />1
         </div>
 
         <div
@@ -146,7 +148,7 @@ const Home = ({
               : "opacity-50"
           )}
         >
-          <MapComponent />
+          <MapComponent />2
         </div>
 
         <div
@@ -206,7 +208,7 @@ const Home = ({
             selectedCard[tabSelected]["chatBot"] ? "opacity-100" : "opacity-50"
           )}
         >
-          <Chatbot chatbotUrl={chatbotUrl} />
+          <Chatbot chatbotUrl={chatbotUrl} />3
         </div>
 
 
@@ -217,7 +219,7 @@ const Home = ({
             selectedCard[tabSelected]["actions"] ? "opacity-100" : "opacity-50"
           )}
         >
-          <Actions photoUrl={actionImageUrl} />
+          <Actions photoUrl={actionImageUrl} />4
         </div>
 
       </Responsive>
