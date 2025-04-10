@@ -7,18 +7,18 @@ import { useRouter } from "next/navigation";
 
 import Paper from "./paper";
 import { AnimationSwitch } from "./animation-swith";
-import MiniPic from "./mini-pic";
+// import MiniPic from "./mini-pic";
 
 import { cn } from "@/lib/utils";
 import AvatarTransition from "@/components/avatar";
-import { ThemeSwitch } from "@/components/theme-switch";
+// import { ThemeSwitch } from "@/components/theme-switch";
 import CardStack from "@/components/card-stack";
 import AnimatedEmoji from "@/components/animated-emoji";
 import IconCloud from "@/components/icon-cloud";
 import MapComponent from "@/components/map";
 import WebAgent from "@/components/webagent";
 import Chatbot from "@/components/chatbot";
-import { MiniModel } from "@/components/mini";
+// import { MiniModel } from "@/components/mini";
 import Actions from "@/components/actions";
 import { layouts, selectedCard } from "@/config/layout";
 import { icons } from "@/config/icons";
@@ -119,7 +119,7 @@ const Home = ({
               : "opacity-50"
           )}
         >
-          <ThemeSwitch />
+         111
         </div>
         <div
           key="cardStack"
@@ -191,22 +191,6 @@ const Home = ({
           )}
         >
           <Chatbot chatbotUrl={chatbotUrl} />
-        </div>
-        <div
-          key="miniModel"
-          className={cn(
-            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1] overflow-hidden",
-            selectedCard[tabSelected]["miniModel"]
-              ? "opacity-100"
-              : "opacity-50"
-          )}
-        >
-          {animated ? <MiniModel /> : <MiniPic />}
-          <AnimationSwitch
-            animated={animated}
-            className="absolute top-4 right-4 z-50"
-            setAnimated={setAnimated}
-          />
         </div>
         <div
           key="actions"
