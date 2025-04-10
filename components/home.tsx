@@ -175,8 +175,14 @@ const Home = ({
             "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden z-[1]",
             selectedCard[tabSelected]["webAgent"] ? "opacity-100" : "opacity-50"
           )}
+          style={{
+            backgroundImage: `url('/yq.png')`,
+            backgroundSize: "cover", // 图片填充满整个 div
+            backgroundRepeat: "no-repeat", // 不重复
+            backgroundPosition: "center", // 居中显示
+          }}
         >
-          <WebAgent webAgentUrl="/yq.png" title="月琴" url="https://playcanv.as/b/6e3141a6" />
+          <WebAgent webAgentUrl="/" title="月琴" url="https://playcanv.as/b/6e3141a6" />
         </div>
         <div
           key="webAgent2"
@@ -184,8 +190,14 @@ const Home = ({
             "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden z-[1]",
             selectedCard[tabSelected]["webAgent"] ? "opacity-100" : "opacity-50"
           )}
+          style={{
+            backgroundImage: `url('/ls.png')`,
+            backgroundSize: "cover", // 图片填充满整个 div
+            backgroundRepeat: "no-repeat", // 不重复
+            backgroundPosition: "center", // 居中显示
+          }}
         >
-          <WebAgent webAgentUrl="/ls.png" title="芦笙" url="https://playcanv.as/p/wwwViNJA/" />
+          <WebAgent webAgentUrl="/" title="芦笙" url="https://playcanv.as/p/wwwViNJA/" />
         </div>
         <div
           key="chatBot"
