@@ -136,7 +136,7 @@ const Home = ({
               : "opacity-50"
           )}
         >
-          <CardStack photos={photos} />1
+          <CardStack photos={photos} />
         </div>
 
         <div
