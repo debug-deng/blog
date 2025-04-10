@@ -165,8 +165,14 @@ const Home = ({
             // 跳转到指定链接
             router.push("https://playcanv.as/b/6e3141a6"); // 替换为你的目标链接
           }}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              router.push("https://playcanv.as/b/6e3141a6");
+            }
+          }}
         >
-
         </div>
         <div
           key="webAgent2"
@@ -184,10 +190,15 @@ const Home = ({
             // 跳转到指定链接
             router.push("https://playcanv.as/p/wwwViNJA/"); // 替换为你的目标链接
           }}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              router.push("https://playcanv.as/p/wwwViNJA/");
+            }
+          }}
         >
-
         </div>
-        
         <div
           key="chatBot"
           className={cn(
