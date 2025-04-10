@@ -30,9 +30,11 @@ interface HomeProps {
   dogUrl: string;
   actionImageUrl: string;
   resumeUrl: string;
-  webagentUrl: string;
+  // 删除未使用的变量
+  // webagentUrl: string;
   chatbotUrl: string;
-  paperUrl: string;
+  // 删除未使用的变量
+  // paperUrl: string;
 }
 
 const Home = ({
@@ -41,13 +43,16 @@ const Home = ({
   dogUrl,
   actionImageUrl,
   resumeUrl,
-  webagentUrl,
+  // 删除未使用的变量
+  // webagentUrl,
   chatbotUrl,
-  paperUrl,
+  // 删除未使用的变量
+  // paperUrl,
 }: HomeProps) => {
   const width = useWindowWidth();
   const [tabSelected, setTabSelected] = useState("all");
-  const [animated, setAnimated] = useState(false);
+  // 删除未使用的变量
+  // const [animated, setAnimated] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -107,7 +112,14 @@ const Home = ({
         >
           <AvatarTransition avatarUrl="/tx.jpg" dogUrl={dogUrl} />
           <p className="text-sm md:text-medium overflow-auto">
-            <span className="font-oleo text-2xl"> Children is Songs in the Mountains </span>is an electronic museum dedicated to intangible cultural heritage instruments。 It also encapsulates the rich stories of the Children is Songs in the Mountains project， which， over the years， has crossed mountains and rivers through music education， fostering cultural exchange with ethnic minority communities。 Presented in digital form， the initiative aims to broaden public understanding of ethnic minority musical traditions， while also serving as a platform to support rural public welfare in these communities。  
+            <span className="font-oleo text-2xl"> Children is Songs in the Mountains </span> is an electronic museum dedicated to intangible cultural heritage
+            instruments。 It also encapsulates the rich stories of the Children
+            is Songs in the Mountains project， which， over the years， has
+            crossed mountains and rivers through music education， fostering
+            cultural exchange with ethnic minority communities。 Presented in
+            digital form， the initiative aims to broaden public understanding
+            of ethnic minority musical traditions， while also serving as a
+            platform to support rural public welfare in these communities。  
           </p>
         </div>
         <div
@@ -117,14 +129,12 @@ const Home = ({
             selectedCard[tabSelected]["themeSwitch"] ? "opacity-100" : "opacity-50"
           )}
           style={{
-            backgroundImage: `url('/565656.jpg')`,
+            backgroundImage: `url('/565656.jpg')`, 
             backgroundSize: "cover", // 图片填充满整个 div
             backgroundRepeat: "no-repeat", // 不重复
             backgroundPosition: "center", // 居中显示
           }}
-        >
-          
-        </div>
+        /> // 空组件自闭合
         <div
           key="cardStack"
           className={cn(
@@ -154,16 +164,24 @@ const Home = ({
           className={cn(
             "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden z-[1]",
             selectedCard[tabSelected]["webAgent"] ? "opacity-100" : "opacity-50"
-          )}
+          )},
           style={{
-            backgroundImage: `url('/333.jpg')`,
+            backgroundImage: `url('/333.jpg')`, 
             backgroundSize: "cover", // 图片填充满整个 div
             backgroundRepeat: "no-repeat", // 不重复
             backgroundPosition: "center", // 居中显示
           }}
+          role="button" // 添加角色
+          tabIndex="0" // 添加 tab 索引
           onClick={() => {
             // 跳转到指定链接
             router.push("https://playcanv.as/b/6e3141a6"); // 替换为你的目标链接
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') { // 处理键盘事件
+              e.preventDefault();
+              router.push("https://playcanv.as/b/6e3141a6");
+            }
           }}
         >
 
@@ -173,16 +191,24 @@ const Home = ({
           className={cn(
             "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden z-[1]",
             selectedCard[tabSelected]["webAgent"] ? "opacity-100" : "opacity-50"
-          )}
+          )},
           style={{
-            backgroundImage: `url('/115.jpg')`,
+            backgroundImage: `url('/115.jpg')`, 
             backgroundSize: "cover", // 图片填充满整个 div
             backgroundRepeat: "no-repeat", // 不重复
             backgroundPosition: "center", // 居中显示
           }}
+          role="button" // 添加角色
+          tabIndex="0" // 添加 tab 索引
           onClick={() => {
             // 跳转到指定链接
             router.push("https://playcanv.as/p/wwwViNJA/"); // 替换为你的目标链接
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') { // 处理键盘事件
+              e.preventDefault();
+              router.push("https://playcanv.as/p/wwwViNJA/");
+            }
           }}
         >
 
