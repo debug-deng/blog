@@ -148,7 +148,18 @@ const Home = ({
               : "opacity-50"
           )}
         >
-          <MapComponent />2
+          
+        </div>
+        <div
+          key="mapComponent2"
+          className={cn(
+            "bg-white dark:bg-darkBg cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1]",
+            selectedCard[tabSelected]["mapComponent"]
+              ? "opacity-100"
+              : "opacity-50"
+          )}
+        >
+          
         </div>
 
         <div
