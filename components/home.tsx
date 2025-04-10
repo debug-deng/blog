@@ -114,12 +114,16 @@ const Home = ({
           key="themeSwitch"
           className={cn(
             "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1]",
-            selectedCard[tabSelected]["themeSwitch"]
-              ? "opacity-100"
-              : "opacity-50"
+            selectedCard[tabSelected]["themeSwitch"] ? "opacity-100" : "opacity-50"
           )}
+          style={{
+            backgroundImage: `url('/565656.jpg')`,
+            backgroundSize: "cover", // 图片填充满整个 div
+            backgroundRepeat: "no-repeat", // 不重复
+            backgroundPosition: "center", // 居中显示
+          }}
         >
-         111
+          
         </div>
         <div
           key="cardStack"
