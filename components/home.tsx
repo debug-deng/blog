@@ -148,7 +148,7 @@ const Home = ({
               : "opacity-50"
           )}
           style={{
-            backgroundImage: `url('/333.jpg')`,
+            backgroundImage: `url('/ls.png')`,
             backgroundSize: "cover", // 图片填充满整个 div
             backgroundRepeat: "no-repeat", // 不重复
             backgroundPosition: "center", // 居中显示
@@ -165,7 +165,7 @@ const Home = ({
               : "opacity-50"
           )}
           style={{
-            backgroundImage: `url('/115.jpg')`,
+            backgroundImage: `url('/yq.png')`,
             backgroundSize: "cover", // 图片填充满整个 div
             backgroundRepeat: "no-repeat", // 不重复
             backgroundPosition: "center", // 居中显示
