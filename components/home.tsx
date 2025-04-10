@@ -136,17 +136,7 @@ const Home = ({
         >
           <CardStack photos={photos} />
         </div>
-{/*         <div
-          key="animatedEmoji"
-          className={cn(
-            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1]",
-            selectedCard[tabSelected]["animatedEmoji"]
-              ? "opacity-100"
-              : "opacity-50"
-          )}
-        >
-          <AnimatedEmoji />
-        </div> */}
+
         <div
           key="mapComponent"
           className={cn(
@@ -158,17 +148,7 @@ const Home = ({
         >
           <MapComponent />
         </div>
-{/*         <div
-          key="iconCloud"
-          className={cn(
-            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center relative overflow-hidden p-10 md:p-8 z-[1]",
-            selectedCard[tabSelected]["iconCloud"]
-              ? "opacity-100"
-              : "opacity-50"
-          )}
-        >
-          <IconCloud iconSlugs={icons} />
-        </div> */}
+
         <div
           key="webAgent"
           className={cn(
@@ -185,8 +165,14 @@ const Home = ({
             // 跳转到指定链接
             router.push("https://playcanv.as/b/6e3141a6"); // 替换为你的目标链接
           }}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              router.push("https://playcanv.as/b/6e3141a6");
+            }
+          }}
         >
-{/*           <WebAgent webAgentUrl="/" title="月琴" url="https://playcanv.as/b/6e3141a6" /> */}
         </div>
         <div
           key="webAgent2"
@@ -204,8 +190,14 @@ const Home = ({
             // 跳转到指定链接
             router.push("https://playcanv.as/p/wwwViNJA/"); // 替换为你的目标链接
           }}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              router.push("https://playcanv.as/p/wwwViNJA/");
+            }
+          }}
         >
-{/*           <WebAgent webAgentUrl="/" title="芦笙" url="https://playcanv.as/p/wwwViNJA/" /> */}
         </div>
         <div
           key="chatBot"
@@ -216,6 +208,8 @@ const Home = ({
         >
           <Chatbot chatbotUrl={chatbotUrl} />
         </div>
+
+
         <div
           key="actions"
           className={cn(
@@ -225,15 +219,7 @@ const Home = ({
         >
           <Actions photoUrl={actionImageUrl} />
         </div>
-{/*         <div
-          key="paper"
-          className={cn(
-            "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1] overflow-hidden",
-            selectedCard[tabSelected]["paper"] ? "opacity-100" : "opacity-50"
-          )}
-        >
-          <Paper paperUrl={paperUrl} />
-        </div> */}
+
       </Responsive>
     </div>
   );
