@@ -9,6 +9,7 @@ export const layouts: Record<string, Layouts> = {
       { i: "cardStack", x: 0, y: 2, w: 2, h: 2 },
       { i: "animatedEmoji", x: 2, y: 0, w: 1, h: 2 },
       { i: "mapComponent", x: 2, y: 1, w: 1, h: 2 },
+      { i: "mapComponent2", x: 3, y: 1, w: 1, h: 2 },
       { i: "iconCloud", x: 2, y: 3, w: 1, h: 2 },
       { i: "webAgent", x: 3, y: 0, w: 1, h: 4 },
       { i: "webAgent2", x: 2, y: 0, w: 1, h: 4 },
