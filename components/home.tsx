@@ -181,8 +181,12 @@ const Home = ({
             backgroundRepeat: "no-repeat", // 不重复
             backgroundPosition: "center", // 居中显示
           }}
+          onClick={() => {
+            // 跳转到指定链接
+            router.push("https://playcanv.as/b/6e3141a6"); // 替换为你的目标链接
+          }}
         >
-          <WebAgent webAgentUrl="/" title="月琴" url="https://playcanv.as/b/6e3141a6" />
+{/*           <WebAgent webAgentUrl="/" title="月琴" url="https://playcanv.as/b/6e3141a6" /> */}
         </div>
         <div
           key="webAgent2"
@@ -196,8 +200,12 @@ const Home = ({
             backgroundRepeat: "no-repeat", // 不重复
             backgroundPosition: "center", // 居中显示
           }}
+          onClick={() => {
+            // 跳转到指定链接
+            router.push("https://playcanv.as/p/wwwViNJA/"); // 替换为你的目标链接
+          }}
         >
-          <WebAgent webAgentUrl="/" title="芦笙" url="https://playcanv.as/p/wwwViNJA/" />
+{/*           <WebAgent webAgentUrl="/" title="芦笙" url="https://playcanv.as/p/wwwViNJA/" /> */}
         </div>
         <div
           key="chatBot"
