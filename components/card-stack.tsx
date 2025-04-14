@@ -16,6 +16,7 @@ interface CardStackProps {
 }
 
 const CardStack: React.FC<CardStackProps> = ({ photos }) => {
+  console.log(photos)
   const [cards, setCards] = useState<Card[]>([]);
 
   useEffect(() => {
