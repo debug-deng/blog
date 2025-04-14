@@ -64,27 +64,40 @@ export async function batchGetPhotoUrls(
 }
 
 export async function listPhotos(folderPath: string): Promise<string[]> {
-  const cacheKey = `folder_${folderPath}`;
-  const cached = urlCache.get(cacheKey);
-  const now = Date.now();
+  // const cacheKey = `folder_${folderPath}`;
+  // const cached = urlCache.get(cacheKey);
+  // const now = Date.now();
 
-  if (cached && now - cached.timestamp < CACHE_DURATION) {
-    return JSON.parse(cached.url); // In this case, url contains JSON string of URLs array
-  }
+  // if (cached && now - cached.timestamp < CACHE_DURATION) {
+  //   return JSON.parse(cached.url); // In this case, url contains JSON string of URLs array
+  // }
 
-  const folderRef = ref(storage, folderPath);
+  // const folderRef = ref(storage, folderPath);
 
   try {
-    const res = await listAll(folderRef);
-    const urls = await Promise.all(
-      res.items.map((itemRef) => getDownloadURL(itemRef))
-    );
+    // const res = await listAll(folderRef);
+    // const urls = await Promise.all(
+    //   res.items.map((itemRef) => getDownloadURL(itemRef))
+    // );
 
-    // Cache the results
-    urlCache.set(cacheKey, {
-      url: JSON.stringify(urls),
-      timestamp: now,
-    });
+    // // Cache the results
+    // urlCache.set(cacheKey, {
+    //   url: JSON.stringify(urls),
+    //   timestamp: now,
+    // });
+
+    const urls = [
+    "/photos/1.jpg",
+    "/photos/2.jpg",
+    "/photos/3.jpg",
+    "/photos/4.jpg",
+    "/photos/5.jpg",
+    "/photos/6.jpg",
+    "/photos/7.jpg",
+    "/photos/8.jpg",
+    "/photos/9.jpg",
+    "/photos/10.jpg",
+  ]
 
     return urls;
   } catch (error) {
