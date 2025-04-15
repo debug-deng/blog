@@ -12,5 +12,5 @@ export const siteConfig = {
 
 export const notionBlogConfig = {
   //blogParentId: "13eca92a-1fdc-807c-9c63-fd813f22449b",
-  blogParentId: "1d69441e-2757-8046-9a7b-c16a7d4f2d27",
+  blogParentId: "1d6c9329-68e0-81a3-81b4-f94fcc8f0105",
 };
